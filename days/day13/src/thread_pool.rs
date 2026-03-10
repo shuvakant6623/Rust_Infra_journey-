@@ -37,7 +37,7 @@ struct State {
     capacity: usize,
 }
 
-struct ThreadPool {
+pub struct ThreadPool {
     workers: Vec<thread::JoinHandle<()>>,
     shared: Arc<(Mutex<State>, Condvar)>,
 }

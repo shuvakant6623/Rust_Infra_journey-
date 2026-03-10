@@ -6,7 +6,7 @@ use std::time::Duration;
 
 fn main() {
 
-    let pool = ThreadPool::new(3, 5);
+    let pool = ThreadPool::new(3);
 
     println!("Submitting jobs...\n");
 
